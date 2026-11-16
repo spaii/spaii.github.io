@@ -1,0 +1,233 @@
+export type Project = {
+  title: string;
+  period: string;
+  role: string;
+  description: string;
+  result: string;
+  tags: string[];
+  links: { label: string; href: string }[];
+  image?: string;
+};
+
+export type SkillGroup = {
+  label: string;
+  items: string[];
+};
+
+export const profile = {
+  welcome: "Welcome to \n my portofolio",
+  music: "/audio/chil.mp3", // kosongkan "" untuk menyembunyikan tombol musik
+  musicCover: "/images/musik.jpg", // foto di atas tombol musik, kosongkan "" kalau belum ada
+  musicTitle: "Chill Day", // opsional, kosongkan "" untuk menyembunyikan
+  name: "DIMAS",
+  handle: "PORTOFOLIO",
+  headline: "Sarjana Teknik Informatika · Lulus 2026",
+  intro:
+    "Lulusan S1 Teknik Informatika yang suka membangun aplikasi web dari database sampai tampilan. Saya mencari posisi pertama sebagai software engineer, dengan minat di Frontend dan data.",
+  status: [
+    {
+      key: "Status",
+      value: "Terbuka Untuk Kerja Penuh Waktu, Magang, atau Kontrak",
+      highlight: true,
+    },
+    { key: "Lokasi", value: "Pandeglang, Banten" },
+    {
+      key: "Fokus",
+      value:
+        "backend, frontend, full-stack, API, basis data, Network Engineering",
+    },
+    {
+      key: "Stack",
+      value:
+        "HTML & CSS,TypeScript, Python, Vite, Dart, Laravel, React, Node.js, \n PHP Native ,RestAPI, FastAPI, MySQL, SQLite, SQL Server, Git & Github",
+    },
+  ],
+  about: [
+    "Saya menyelesaikan S1 Teknik Informatika dengan skripsi tentang sistem rekomendasi untuk toko daring skala kecil. Dari kuliah dan proyek tim, saya terbiasa membaca kebutuhan pengguna, memecahnya menjadi tugas kecil, dan mengirimkan fitur yang bisa dipakai.",
+    "Di luar kuliah saya ikut kepanitiaan hackathon kampus dan membantu mengelola website himpunan mahasiswa. Saat ini saya belajar menulis tes otomatis dan mendalami desain basis data.",
+  ],
+  // Isi dengan tautan CV, misalnya "/cv.pdf" (file ditaruh di folder public).
+  // Kosongkan untuk menyembunyikan tombol Unduh CV.
+  photo: "/images/profile.jpeg",
+  cvUrl: "/CV_Dimas.pdf",
+};
+
+export const projects: Project[] = [
+  {
+    image: "/images/projects/Padi.jpeg",
+    title:
+      "RANCANG BANGUN SISTEM ANALISIS CITRA DAUN UNTUK DETEKSI PENYAKIT PADI MENGGUNAKAN CONVOLUTIONAL NEURAL NETWORK (CNN) ARSITEKTUR MOBILENETV2 PADA PETANI LOKAL DI DESA TUNGGAL JAYA",
+    period: "2026 · Skripsi",
+    role: "Solo",
+    description:
+      "Pengembangan sistem analisis dengan fokus penerapan teknologi pengolahan citra dan klasifikasi penyakit daun padi pada petani lokal di Desa Tunggal Jaya.",
+    result: "Akurasi Mencapai 93%, dengan data Traning 20.000 data.",
+    tags: ["Python", "Dart", "CNN", "MobileNetV2", "SQlite", "Mobile"],
+    links: [
+      {
+        label: "Kode di GitHub",
+        href: "https://github.com/username/rekomendasi-umkm",
+      },
+      { label: "Demo", href: "https://example.com/demo" },
+    ],
+  },
+  {
+    title: "Aplikasi Peminjaman Ruang Kampus",
+    period: "2025 · Proyek tim",
+    role: "4 orang",
+    description:
+      "Web untuk memesan ruang kelas dan laboratorium. Saya mengerjakan API, deteksi jadwal bentrok, dan sistem persetujuan admin.",
+    result:
+      "Dipakai 3 jurusan selama satu semester, rata-rata 90 pemesanan per bulan.",
+    tags: ["TypeScript", "Node.js", "React", "MySQL"],
+    links: [
+      {
+        label: "Kode di GitHub",
+        href: "https://github.com/username/booking-ruang",
+      },
+    ],
+  },
+  {
+    title: "Pelacak Pengeluaran Mahasiswa",
+    period: "2025 · Hackathon",
+    role: "Juara 2",
+    description:
+      "Aplikasi seluler untuk mencatat uang saku harian dan memberi peringatan saat pengeluaran mendekati batas bulanan.",
+    result:
+      "Prototipe selesai dalam 36 jam, dinilai oleh 5 juri dari industri.",
+    tags: ["Flutter", "Firebase"],
+    links: [
+      {
+        label: "Kode di GitHub",
+        href: "https://github.com/username/pelacak-uang",
+      },
+    ],
+  },
+];
+
+export const skills: SkillGroup[] = [
+  {
+    label: "Bahasa",
+    items: ["TypeScript", "Python", "Java", "PHP", "Dart"],
+  },
+  {
+    label: "Web",
+    items: ["React", "Node.js", "FastAPI", "REST API", "HTML & CSS"],
+  },
+  { label: "Data", items: ["SQLite", "MySQL", "SQL Server"] },
+  {
+    label: "Alat",
+    items: ["Git & GitHub", "CANVA", "Figma"],
+  },
+  {
+    label: "Bahasa asing",
+    items: ["Indonesia (asli)", "Inggris (TOEFL ITP 440)"],
+  },
+];
+
+export type Education = {
+  degree: string;
+  school: string;
+  period: string;
+  logo?: string;
+  gpa?: string;
+  thesis?: string;
+  courses?: string;
+  organization?: string;
+  note?: string;
+};
+
+// Urutan: yang terbaru di paling atas.
+export const educations: Education[] = [
+  {
+    degree: "S1 Teknik Informatika",
+    school: "Universitas Banten Jaya",
+    period: "2022 – 2026",
+    logo: "/images/logos/Unbaja.png",
+    gpa: "3.90 / 4.00",
+    thesis:
+      "RANCANG BANGUN SISTEM ANALISIS CITRA DAUN UNTUK DETEKSI PENYAKIT PADI MENGGUNAKAN CONVOLUTIONAL NEURAL NETWORK (CNN) ARSITEKTUR MOBILENETV2 PADA PETANI LOKAL DI DESA TUNGGAL JAYA",
+    courses:
+      "Basis Data, Struktur Data dan Algoritma, Rekayasa Perangkat Lunak, Pemrograman Web, Network and engineering, UI/UX Desain",
+    organization:
+      "Staf divisi Software & Jaringan UKM Computer Community, 2022-2025",
+  },
+  {
+    degree: "SMK Jurusan Teknik Komputer dan Jaringan",
+    school: "Dwi Putra Bangsa Cimanggu",
+    period: "2019 – 2022",
+    logo: "/images/logos/smk.jpg",
+    note: "Nilai rata-rata rapor 86. Sebagai Teknisi Lab-Komputer", // isi yang benar, atau hapus baris ini
+  },
+  {
+    degree: "Pondok Pesantren ",
+    school: "Mabdaussalikin",
+    period: "2019 – 2022",
+    logo: "/images/logos/ponpes.jpeg",
+    note: "Sebagai Ketua Keibadahan Laki-Laki", // isi yang benar, atau hapus baris ini
+  },
+];
+
+export type Certificate = {
+  title: string;
+  issuer: string;
+  year: string;
+  image: string;
+  href?: string; // tautan verifikasi, boleh dihapus
+};
+
+export const certificates: Certificate[] = [
+  {
+    title: "Workshop Career Preparation for Future Professionals", // ganti dengan yang asli
+    issuer: "Universitas Banten Jaya",
+    year: "2026",
+    image: "/images/certificates/karir.jpg",
+    href: "https://unbaja.ac.id",
+  },
+  {
+    title: "Junior Database Programmer",
+    issuer: "Badan Nasional Sertifikasi Profesi (BNSP)",
+    year: "2026",
+    image: "/images/certificates/sbnsp.jpg",
+    href: "https://www.bnsp.go.id",
+  },
+  {
+    title: "Language Proficiency Test",
+    issuer: "Universitas Banten Jaya",
+    year: "2026",
+    image: "/images/certificates/toefl.jpg",
+    href: "https://unbaja.ac.id",
+  },
+  {
+    title: "Computer andNetwork Engineering ",
+    issuer: "SMK Dwi Putra Bangsa Cimanggu",
+    year: "2022",
+    image: "/images/certificates/smk.jpg",
+    href: "https://daftarsekolah.net/",
+  },
+];
+
+export const contact = {
+  blurb:
+    "Saya terbuka untuk lowongan junior atau magang lanjutan. Kirim email dan saya biasanya membalas dalam 1 sampai 2 hari.",
+  email: "dimastkj0611@email.com",
+  whatsapp: {
+    label: "+62 878-9298-2350",
+    href: "https://wa.me/6287892982350",
+  },
+  github: { label: "github.com/spaii", href: "https://github.com/spaii" },
+  linkedin: {
+    label: "linkedin.com/in/dimas",
+    href: "https://www.linkedin.com/in/dimas",
+  },
+};
+
+export const navItems = [
+  { id: "home", label: "Home" },
+  { id: "tentang", label: "About Me" },
+  { id: "proyek", label: "Projects" },
+  { id: "keahlian", label: "Skills" },
+  { id: "pendidikan", label: "Education" },
+  { id: "sertifikat", label: "Certificates" },
+  { id: "kontak", label: "Contact" },
+];
