@@ -66,24 +66,24 @@ export const projects: Project[] = [
     links: [
       {
         label: "Kode di GitHub",
-        href: "https://github.com/username/rekomendasi-umkm",
+        href: "https://github.com/spaii/deteksi-penyakit-padi",
       },
-      { label: "Demo", href: "https://example.com/demo" },
     ],
   },
   {
-    title: "Aplikasi Peminjaman Ruang Kampus",
-    period: "2025 · Proyek tim",
-    role: "4 orang",
+    image: "/images/projects/properti.png",
+    title: "Aplikasi web properti berbasis Laravel",
+    period: "2025 · Tugas Kuliah",
+    role: "Solo",
     description:
-      "Web untuk memesan ruang kelas dan laboratorium. Saya mengerjakan API, deteksi jadwal bentrok, dan sistem persetujuan admin.",
+      "Trias Property adalah aplikasi web untuk membantu merencanakan pembangunan rumah atau gedung. Pengguna dapat memilih paket bangunan yang sudah tersedia atau menyusun sendiri (custom) bahan yang akan dipakai, lalu melihat hasil dan ringkasan pesanannya sebelum mengirimkannya.",
     result:
-      "Dipakai 3 jurusan selama satu semester, rata-rata 90 pemesanan per bulan.",
-    tags: ["TypeScript", "Node.js", "React", "MySQL"],
+      "Aplikasi web ini selesai dalam 2 minggu, dengan fitur CRUD untuk paket bangunan dan bahan, serta fitur perhitungan harga total.",
+    tags: ["PHP", "Blade", "Other", "MySQL"],
     links: [
       {
         label: "Kode di GitHub",
-        href: "https://github.com/username/booking-ruang",
+        href: "https://github.com/spaii/trias-property",
       },
     ],
   },
