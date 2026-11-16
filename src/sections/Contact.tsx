@@ -27,7 +27,7 @@ export function Contact() {
   return (
     <section id="kontak" className="pt-14">
       <SectionHeading title="Contact" path="/kontak" />
-      <p className="max-w-[56ch]" data-aos="fade-up">
+      <p className="text-left hyphens-auto sm:text-justify" data-aos="fade-up">
         {contact.blurb}
       </p>
 

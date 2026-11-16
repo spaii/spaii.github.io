@@ -93,6 +93,18 @@
     @apply font-display;
     text-wrap: balance;
   }
+
+  /* Paragraf: rata kiri di HP, rata kiri-kanan di layar sedang ke atas */
+  p {
+    text-align: left;
+    hyphens: auto;
+  }
+  @media (min-width: 640px) {
+    p {
+      text-align: justify;
+    }
+  }
+
   @media (prefers-reduced-motion: reduce) {
     html {
       scroll-behavior: auto;
