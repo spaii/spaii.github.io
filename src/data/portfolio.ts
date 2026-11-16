@@ -23,7 +23,7 @@ export const profile = {
   handle: "PORTOFOLIO",
   headline: "Sarjana Teknik Informatika · Lulus 2026",
   intro:
-    "Lulusan S1 Teknik Informatika yang suka membangun aplikasi web dari database sampai tampilan. Saya mencari posisi pertama sebagai software engineer, dengan minat di Frontend dan data.",
+    " Lulusan S1 Teknik Informatika dari Universitas Banten Jaya dengan minat pada teknologi informasi, analisis sistem, jaringan komputer, dan pengembangan perangkat lunak. Saya mencari posisi sebagai IT Staff, IT Support, Web Developer, Frontend Developer, dan Pengelola Database.",
   status: [
     {
       key: "Status",
@@ -43,8 +43,9 @@ export const profile = {
     },
   ],
   about: [
-    "Saya menyelesaikan S1 Teknik Informatika dengan skripsi tentang sistem rekomendasi untuk toko daring skala kecil. Dari kuliah dan proyek tim, saya terbiasa membaca kebutuhan pengguna, memecahnya menjadi tugas kecil, dan mengirimkan fitur yang bisa dipakai.",
-    "Di luar kuliah saya ikut kepanitiaan hackathon kampus dan membantu mengelola website himpunan mahasiswa. Saat ini saya belajar menulis tes otomatis dan mendalami desain basis data.",
+    "Sebelumnya, saya menempuh pendidikan SMK jurusan Teknik Komputer dan Jaringan (TKJ) sambil mondok selama tiga tahun di Pesantren Mabdaussalikin. Selama SMK, saya pernah PKL di Sibernet sebagai teknisi WiFi, dengan pengalaman instalasi dan penanganan gangguan jaringan internet.",
+    "Selama kuliah, saya juga pernah melaksanakan PKN di Mall Pelayanan Publik Pandeglang dengan tugas menganalisis sistem perizinan usaha di DPMPTSP. Selain itu, saya menyelesaikan skripsi berupa pengembangan sistem deteksi penyakit daun padi menggunakan CNN dengan arsitektur MobileNetV2. Di luar kuliah, saya aktif mengikuti kegiatan UKM Computer Community sebagai staf divisi Software & Jaringan.",
+    "Saya merupakan pribadi yang memiliki kemauan belajar tinggi, bertanggung jawab, disiplin, dan mampu bekerja secara individu maupun dalam tim. Meskipun saya masih tergolong fresh graduate, saya siap untuk terus belajar, beradaptasi, dan mengembangkan kemampuan saya di dunia kerja.",
   ],
   // Isi dengan tautan CV, misalnya "/cv.pdf" (file ditaruh di folder public).
   // Kosongkan untuk menyembunyikan tombol Unduh CV.
@@ -199,17 +200,31 @@ export const certificates: Certificate[] = [
     href: "https://unbaja.ac.id",
   },
   {
-    title: "Computer andNetwork Engineering ",
+    title: "Computer and Network Engineering ",
     issuer: "SMK Dwi Putra Bangsa Cimanggu",
     year: "2022",
     image: "/images/certificates/smk.jpg",
     href: "https://daftarsekolah.net/",
   },
+  {
+    title: "IT EXPLORE",
+    issuer: "Computer Community Universitas Banten Jaya",
+    year: "2022",
+    image: "/images/certificates/itxplore.jpg",
+    href: "https://www.instagram.com/ccunbaja/",
+  },
+  {
+    title: "Pelatihan Dasar",
+    issuer: "Himpunan Mahasiswa Teknik Informatika Universitas Banten Jaya",
+    year: "2022",
+    image: "/images/certificates/pedas.jpg",
+    href: "https://www.instagram.com/humanika.unbaja/",
+  },
 ];
 
 export const contact = {
   blurb:
-    "Saya terbuka untuk lowongan junior atau magang lanjutan. Kirim email dan saya biasanya membalas dalam 1 sampai 2 hari.",
+    "Saya terbuka untuk lowongan junior, Network Engineer, kontrak, magang lanjutan. Kirim email atau whatsapp dan saya biasanya membalas dalam 1 sampai 2 hari.",
   email: "dimastkj0611@email.com",
   whatsapp: {
     label: "+62 878-9298-2350",
