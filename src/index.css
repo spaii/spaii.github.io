@@ -94,15 +94,11 @@
     text-wrap: balance;
   }
 
-  /* Paragraf: rata kiri di HP, rata kiri-kanan di layar sedang ke atas */
-  p {
-    text-align: left;
+  /* Paragraf dan daftar: rata kiri-kanan di semua ukuran layar */
+  p,
+  li {
+    text-align: justify;
     hyphens: auto;
-  }
-  @media (min-width: 640px) {
-    p {
-      text-align: justify;
-    }
   }
 
   @media (prefers-reduced-motion: reduce) {
