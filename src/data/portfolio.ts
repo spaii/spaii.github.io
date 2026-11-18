@@ -72,6 +72,22 @@ export const projects: Project[] = [
     ],
   },
   {
+    image: "/images/projects/guru.jpg",
+    title: "Aplikasi Absensi Guru",
+    period: "2026 · Freelance",
+    role: "Solo",
+    description:
+      "Website absensi untuk sekolah. Guru absen masuk dan pulang dengan selfie dari kamera, dan lokasi, alamat, serta waktu tercetak otomatis di bawah foto. Kepala sekolah memantau kehadiran guru secara langsung lewat dashboard. Dibuat dengan Python (Flask) dan SQLite.",
+    result: "Prototipe selesai dalam 36 jam.",
+    tags: ["Python (Flask)", "SQLite"],
+    links: [
+      {
+        label: "Kode di GitHub",
+        href: "https://github.com/username/absensi-guru",
+      },
+    ],
+  },
+  {
     image: "/images/projects/properti.png",
     title: "Aplikasi web properti berbasis Laravel",
     period: "2025 · Tugas Kuliah",
@@ -85,22 +101,6 @@ export const projects: Project[] = [
       {
         label: "Kode di GitHub",
         href: "https://github.com/spaii/trias-property",
-      },
-    ],
-  },
-  {
-    title: "Pelacak Pengeluaran Mahasiswa",
-    period: "2025 · Hackathon",
-    role: "Juara 2",
-    description:
-      "Aplikasi seluler untuk mencatat uang saku harian dan memberi peringatan saat pengeluaran mendekati batas bulanan.",
-    result:
-      "Prototipe selesai dalam 36 jam, dinilai oleh 5 juri dari industri.",
-    tags: ["Flutter", "Firebase"],
-    links: [
-      {
-        label: "Kode di GitHub",
-        href: "https://github.com/username/pelacak-uang",
       },
     ],
   },
