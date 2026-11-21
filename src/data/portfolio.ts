@@ -83,7 +83,7 @@ export const projects: Project[] = [
     links: [
       {
         label: "Kode di GitHub",
-        href: "https://github.com/username/absensi-guru",
+        href: "https://absensiguru.pythonanywhere.com",
       },
     ],
   },
